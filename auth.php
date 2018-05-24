@@ -29,7 +29,7 @@ class auth_plugin_cas_db extends auth_plugin_db {
     /**
      * Constructor.
      */
-    function auth_plugin_cas_db() {
+    function __construct() {
         global $CFG;
         require_once($CFG->libdir.'/adodb/adodb.inc.php');
         
